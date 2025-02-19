@@ -1,0 +1,61 @@
+---
+title: "Schemas"
+format:
+    html:
+        code-fold: true
+execute:
+    echo: false
+    jupyter: python3
+---
+
+```{python,echo=false}
+import json
+
+def convert_json_to_markdown(json_obj, level=0):
+    markdown = ''
+    
+    # Iterate over each key in the JSON object
+    for key, value in json_obj.items():
+        # Add Markdown header based on nesting level
+        markdown += f"{'##' * (level + 1)} {key} \n"
+        
+        if isinstance(value, dict):
+            # If the value is an object, recursively convert it
+            markdown += convert_json_to_markdown(value, level + 1)
+        elif isinstance(value, list):
+            # If it's an array, list out the elements
+            for item in value:
+                markdown += f"{'  ' * (level + 2)}- {json.dumps(item)}\n"
+        else:
+            # Otherwise, it's a primitive value, so just add it
+            markdown += f"{'  ' * (level + 1)}{json.dumps(value)}\n\n"
+
+    return markdown
+
+
+def json_to_markdown(input_file, output_file):
+    # Read the JSON file
+    try:
+        with open(input_file, 'r') as file:
+            data = json.load(file)
+        
+        # Convert JSON to Markdown format
+        markdown = "---\ntitle: \"Schemas\"\n---\n" + convert_json_to_markdown(data)
+        
+        # Write the resulting markdown to the output file
+        with open(output_file, 'w') as file:
+            file.write(markdown)
+        
+        print(f"Markdown saved to {output_file}")
+    
+    except Exception as e:
+        print(f"Error: {e}")
+
+
+# Example usage
+input_file = 'response.schema.json'  # Replace with the path to your JSON file
+output_file = 'response.qmd'  # Replace with the desired output markdown file
+
+json_to_markdown(input_file, output_file)
+
+```

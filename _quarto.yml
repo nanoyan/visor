@@ -1,0 +1,28 @@
+project:
+  type: website
+
+website:
+  site-url: https://iqb-specifications.github.io/response/
+  favicon: favicon.ico
+  page-navigation: true
+  repo-url: https://github.com/iqb-specifications/response/
+  navbar:
+    logo: IQB-klein.png
+    search: true
+    left:
+      - text: "Schemas"
+        href: response.qmd
+    right:
+      - icon: github
+        href: https://github.com/iqb-specifications/response/
+        aria-label: Source Code
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
