@@ -2,56 +2,56 @@
   {
     "objectID": "response.html",
     "href": "response.html",
-    "title": "Schemas",
+    "title": "",
     "section": "",
     "text": "“response@iqb-standard@1.4”"
   },
   {
     "objectID": "response.html#id",
     "href": "response.html#id",
-    "title": "Schemas",
+    "title": "",
     "section": "",
     "text": "“response@iqb-standard@1.4”"
   },
   {
     "objectID": "response.html#schema",
     "href": "response.html#schema",
-    "title": "Schemas",
+    "title": "",
     "section": "$schema",
     "text": "$schema\n“http://json-schema.org/draft-07/schema#”"
   },
   {
     "objectID": "response.html#title",
     "href": "response.html#title",
-    "title": "Schemas",
+    "title": "",
     "section": "title",
     "text": "title\n“Response”"
   },
   {
     "objectID": "response.html#description",
     "href": "response.html#description",
-    "title": "Schemas",
+    "title": "",
     "section": "description",
     "text": "description\n“Data structure produced by verona players”"
   },
   {
     "objectID": "response.html#type",
     "href": "response.html#type",
-    "title": "Schemas",
+    "title": "",
     "section": "type",
     "text": "type\n“object”"
   },
   {
     "objectID": "response.html#properties",
     "href": "response.html#properties",
-    "title": "Schemas",
+    "title": "",
     "section": "properties",
     "text": "properties\n\nid\n\ntype\n  \"string\"\n\n\npattern\n  \"^[0-9a-zA-Z_]+$\"\n\n\ndescription\n  \"Identifier for the data source (variable)\"\n\n\n\nstatus\n\ntype\n  \"string\"\n\n\nenum\n    - \"UNSET\"\n    - \"NOT_REACHED\"\n    - \"DISPLAYED\"\n    - \"VALUE_CHANGED\"\n    - \"DERIVE_ERROR\"\n    - \"CODING_COMPLETE\"\n    - \"NO_CODING\"\n    - \"INVALID\"\n    - \"CODING_INCOMPLETE\"\n    - \"CODING_ERROR\"\n    - \"PARTLY_DISPLAYED\"\n    - \"DERIVE_PENDING\"\n    - \"INTENDED_INCOMPLETE\"\n\n\ndescription\n  \"Status as stage in the workflow of creating and coding a variable's value\"\n\n\n\nvalue\n\nanyOf\n    - {\"type\": \"array\", \"items\": {\"type\": [\"string\", \"null\"]}}\n    - {\"type\": \"array\", \"items\": {\"type\": [\"number\", \"null\"]}}\n    - {\"type\": \"array\", \"items\": {\"type\": [\"boolean\", \"null\"]}}\n    - {\"type\": \"number\"}\n    - {\"type\": \"string\"}\n    - {\"type\": \"null\"}\n    - {\"type\": \"boolean\"}\n\n\n\nsubform\n\ntype\n  \"string\"\n\n\ndescription\n  \"If variables i. e. data source ids are not unique in the unit, 'subform' can specify the sub object related to the specific variable.\"\n\n\n\ncode\n\ntype\n  \"integer\"\n\n\ndescription\n  \"Code representing the category of the value after coding process.\"\n\n\n\nscore\n\ntype\n  \"integer\"\n\n\ndescription\n  \"This value represents the result evaluation of the code after coding process.\""
   },
   {
     "objectID": "response.html#required",
     "href": "response.html#required",
-    "title": "Schemas",
+    "title": "",
     "section": "required",
     "text": "required\n- \"id\"\n- \"status\"\n- \"value\""
   },

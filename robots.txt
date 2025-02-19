@@ -1,1 +1,1 @@
-Sitemap: https://nanoyan.github.io/visor/sitemap.xml
+Sitemap: https://nanoyan.github.io/visor/response.html/sitemap.xml
