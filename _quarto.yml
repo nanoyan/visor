@@ -2,10 +2,10 @@ project:
   type: website
 
 website:
-  site-url: https://iqb-specifications.github.io/response/
+  site-url: https://nanoyan.github.io/visor/
   favicon: favicon.ico
   page-navigation: true
-  repo-url: https://github.com/iqb-specifications/response/
+  repo-url: https://github.com/nanoyan/visor/
   navbar:
     logo: IQB-klein.png
     search: true
@@ -14,7 +14,7 @@ website:
         href: response.qmd
     right:
       - icon: github
-        href: https://github.com/iqb-specifications/response/
+        href: https://github.com/nanoyan/visor/
         aria-label: Source Code
 
 
