@@ -39,7 +39,7 @@ def json_to_markdown(input_file, output_file):
             data = json.load(file)
         
         # Convert JSON to Markdown format
-        markdown = "---\ntitle: \"Schemas\"\n---\n" + convert_json_to_markdown(data)
+        markdown = convert_json_to_markdown(data)
         
         # Write the resulting markdown to the output file
         with open(output_file, 'w') as file:

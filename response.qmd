@@ -1,6 +1,3 @@
----
-title: "Schemas"
----
 ## $id 
   "response@iqb-standard@1.4"
 
