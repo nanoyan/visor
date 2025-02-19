@@ -25,8 +25,9 @@ jobs:
       - name: Install Python and Dependencies
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.12'
           cache: 'pip'
+      - run: python3 -m pip install jupyter
 
       - name: Deploy to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
