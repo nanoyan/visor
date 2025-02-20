@@ -33,10 +33,10 @@ Data structure to specify recoding based on response state.
 
 ```{python}
 #| echo: false
-from json_schema_for_humans.generate import generate_from_filename
-from json_schema_for_humans.generation_configuration import GenerationConfiguration
+#from json_schema_for_humans.generate import generate_from_filename
+#from json_schema_for_humans.generation_configuration import GenerationConfiguration
 
-config = GenerationConfiguration(copy_css=False, expand_buttons=True)
+#config = GenerationConfiguration(copy_css=False, expand_buttons=True)
 
 # generate_from_filename("docs/coding-scheme.schema.json", "templates/coding-scheme.html", config=config)
 # generate_from_filename("docs/missing.schema.json", "templates/missing.html", config=config)
