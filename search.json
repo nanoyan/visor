@@ -2,9 +2,44 @@
   {
     "objectID": "index.html",
     "href": "index.html",
+    "title": "Actual Specifications in IQB",
+    "section": "",
+    "text": "Data structure to specify all processing steps of response data in order to get coded and scored data for analyses"
+  },
+  {
+    "objectID": "index.html#coding-scheme",
+    "href": "index.html#coding-scheme",
+    "title": "Actual Specifications in IQB",
+    "section": "",
+    "text": "Data structure to specify all processing steps of response data in order to get coded and scored data for analyses"
+  },
+  {
+    "objectID": "index.html#missing",
+    "href": "index.html#missing",
+    "title": "Actual Specifications in IQB",
+    "section": "Missing",
+    "text": "Missing\nData structure to describe a missing status in the final data set."
+  },
+  {
+    "objectID": "index.html#response",
+    "href": "index.html#response",
+    "title": "Actual Specifications in IQB",
+    "section": "Response",
+    "text": "Response\nData structure produced by verona players."
+  },
+  {
+    "objectID": "index.html#state-map",
+    "href": "index.html#state-map",
+    "title": "Actual Specifications in IQB",
+    "section": "State Map",
+    "text": "State Map\nData structure to specify recoding based on response state."
+  },
+  {
+    "objectID": "index2.html",
+    "href": "index2.html",
     "title": "Schemas",
     "section": "",
-    "text": "Markdown saved to response.qmd"
+    "text": "Error: [Errno 2] No such file or directory: 'response.schema.json'"
   },
   {
     "objectID": "response.html",
